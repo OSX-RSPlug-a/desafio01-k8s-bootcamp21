@@ -1,5 +1,9 @@
 FROM node:15.13.0-alpine3.11
 
+RUN apk add --update \
+    curl \
+    && rm -rf /var/cache/apk/*
+
 RUN apk add --no-cache bash
 
 USER node
