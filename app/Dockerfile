@@ -10,3 +10,4 @@ USER node
 
 WORKDIR /home/node/app
 
+COPY . .
